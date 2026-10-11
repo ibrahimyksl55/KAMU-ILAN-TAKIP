@@ -46,3 +46,32 @@ kamu_ilan_proje/
 ├── scraper.py                # Web Kazıma ve Telegram Bildirim Servisi
 ├── database.py               # SQLite Veritabanı ve Tablo Kurulumları
 └── kamu_ilanlari.db          # İlişkisel Veritabanı Dosyası
+
+
+🛠️ Kurulum, Çalıştırma ve APK Süreci
+Projeyi yerel ortamında çalıştırmak ve Android için derlemek istersen sırasıyla şu adımları izleyebilirsin:
+
+1. Backend (FastAPI) Çalıştırılması
+Terminalde proje ana dizinine gelerek bağımlılıkları yükle ve sunucuyu başlat:
+
+Bash
+pip install fastapi uvicorn requests beautifulsoup4 pydantic
+uvicorn main:app --host 0.0.0.0 --reload
+2. Frontend (Flutter) Çalıştırılması
+kamu_ilan_proje/kamu_ilan_mobil dizinine geçerek mobil/web uygulamasını derle:
+
+Bash
+cd kamu_ilan_mobil
+flutter pub get
+flutter run
+3. APK Kurulum Dosyasının Oluşturulması
+Android cihazlar için release APK sürümünü oluşturmak üzere şu komutu çalıştırabilirsin:
+
+Bash
+flutter build apk --release
+Çıktı Konumu: build/app/outputs/flutter-apk/app-release.apk
+
+👤 İletişim & Geliştirici
+İbrahim Yüksel
+
+GitHub: @ibrahimyks155
