@@ -75,4 +75,4 @@ flutter build apk --release
 👤 İletişim & Geliştirici
 İbrahim Yüksel
 
-GitHub: @ibrahimyks155
+GitHub: @ibrahimyksl55
